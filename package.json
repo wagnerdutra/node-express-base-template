@@ -9,7 +9,7 @@
     "start": "nodemon src/index.js --ignore __tests__",
     "prod": "NODE_ENV=production node src/index.js",
     "test": "NODE_ENV=test jest || :",
-    "coverage": "jest --coverage"
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "dotenv": "^8.0.0",

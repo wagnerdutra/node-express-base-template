@@ -13,4 +13,11 @@ describe('HelloWorld', () => {
       .send({})
     expect(response.status).toBe(400)
   })
+
+  it('should has status 200', async () => {
+    const response = await request(app)
+      .post('/')
+      .send({ message: 'oi' })
+    expect(response.status).toBe(200)
+  })
 })
